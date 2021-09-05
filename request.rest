@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6134b4ef5b3b6019d8b51305
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+### 
+
+PATCH http://localhost:3000/subscribers/6134b4ef5b3b6019d8b51305
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6134b3466a60aa0222e08867
